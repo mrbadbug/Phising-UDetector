@@ -13,5 +13,5 @@ A Streamlit app to detect phishing URLs using a Decision Tree model trained on s
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<USERNAME>/Phishing_URL_Detector.git
+git clone https://github.com/<USERNAME>/Phishing-UDetector.git
 cd Phishing_URL_Detector
