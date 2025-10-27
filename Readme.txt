@@ -1,11 +1,17 @@
 # Phishing URL Detector
 
-This project trains a Random Forest classifier to detect phishing URLs
+A Streamlit app to detect phishing URLs using a Decision Tree model trained on simple URL features.
 
-## How to run
-1. Clone the repository
-2. Place dataset in the same folder
-3. Install dependencies:
+## Features
+- Single URL prediction
+- Batch CSV prediction
+- Customizable feature extraction
+- Works with your own model or the included example model
+
+## Installation
+
+1. Clone the repository:
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/<USERNAME>/Phishing_URL_Detector.git
+cd Phishing_URL_Detector
