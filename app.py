@@ -8,7 +8,6 @@ from feature_extractor import extract_basic_features
 st.set_page_config(page_title="Phishing URL Detector", layout="centered")
 st.title("Phishing URL Detector 🔒")
 
-# Load model
 model_path = "phishing_model.pkl"
 if not Path(model_path).exists():
     st.error(f"Model file '{model_path}' not found!")
@@ -17,10 +16,8 @@ if not Path(model_path).exists():
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
-# Select mode
 mode = st.radio("Mode", ["Single URL", "Batch CSV"])
 
-# Single URL
 if mode == "Single URL":
     url = st.text_input("Enter URL to check")
     if st.button("Predict URL"):
@@ -35,7 +32,6 @@ if mode == "Single URL":
         else:
             st.warning("Please enter a URL.")
 
-# Batch CSV
 elif mode == "Batch CSV":
     uploaded_file = st.file_uploader("Upload CSV with a column named 'url'", type=["csv"])
     if uploaded_file:
