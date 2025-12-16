@@ -1,4 +1,4 @@
-**Phishing URL Detector**
+# Phishing URL Detector
 A Streamlit app to detect phishing URLs using a Decision Tree model trained on simple URL features.
 
 **Features**
